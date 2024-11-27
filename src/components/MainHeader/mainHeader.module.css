@@ -1,0 +1,59 @@
+.header .content {
+  height: 78px;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .content .logo {
+  width: 160px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notificationBtn {
+  height: 48px;
+  width: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px 0px #3c97af14;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notificationBtn .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #5a9bd8;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.header .content .pages {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  list-style-type: none;
+}
+.header .content .pages a {
+  padding-bottom: 6px;
+  text-decoration: none;
+  color: #999999;
+  cursor: pointer;
+}
+
+.header .content .pages .active {
+  color: #000;
+  border-bottom: 2px solid #3c97af;
+}
