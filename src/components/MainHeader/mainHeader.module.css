@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  
 }
 
 .notificationBtn .dot {
@@ -52,7 +53,12 @@
   color: #999999;
   cursor: pointer;
 }
-
+.noneActive{
+  padding-bottom: 6px;
+  text-decoration: none;
+  color: #999999;
+  cursor: pointer;
+}
 .header .content .pages .active {
   color: #000;
   border-bottom: 2px solid #3c97af;

@@ -6,6 +6,7 @@ import Ali from "/public/Ali.svg";
 import Curlsline from "/public/curlsline.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { Flex, Progress } from "antd";
+import MultiRingProgressBar from "../../CustomIcons/MultiRingProgressBar";
 const dashBoardScreen = () => {
   const projectinfo = [
     {
@@ -27,8 +28,8 @@ const dashBoardScreen = () => {
     {
       id: 1,
       toDo: 35,
-      progress:12,
-      done:53,
+      progress: 12,
+      done: 53,
     },
   ];
   const percentage = 50;
@@ -312,7 +313,17 @@ const dashBoardScreen = () => {
               <div className="totalTasksProgress">
                 <div className="totalTasksInfoProgress">
                   <h2>Total Tasks - 21</h2>
-                  <p>sdsd</p>
+
+                  <MultiRingProgressBar
+        values={[53, 12, 35]} // Percentages for each ring
+        colors={["#1FAD58", "#D69E2E", "#3C97AF"]} // Colors for each ring
+        radius={100} // Outer radius
+        strokeWidth={15} // Thickness of each ring
+        gap={15} // Gap between the rings
+        centerWhiteSpace={8} // Large white space in the center
+        animationDuration={2} // Animation duration in seconds
+        rotations={[-180, 309, 314]} // Rotation angles for each ring
+      />
                 </div>
               </div>
               {inProgress?.map((i) => (
@@ -327,6 +338,7 @@ const dashBoardScreen = () => {
                         strokeColor="#3C97AF"
                         status="active"
                         showInfo={false}
+                        className="custom--margin"
                       />
                       <h2>{`In Progress ${i.progress}% `}</h2>
                       <Progress
