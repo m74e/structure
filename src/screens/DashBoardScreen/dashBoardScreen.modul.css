@@ -3,6 +3,7 @@
   justify-content: space-between;
   background-color: #f8fbfc;
   padding: 50px 0px;
+  position: relative;
 }
 .allProjects {
   display: flex;
@@ -14,6 +15,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6px 24px;
+  
+}
+.progressCardProject {
+  width: 338px;
+  height: 136px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px 0px #3c97af14;
+  
 }
 .activeAll {
   background-color: #3c97af33;
@@ -48,17 +59,15 @@
   border-radius: 16px;
   padding: 8px 16px;
 }
-.totalTasksLineProgress .inLine{
+.totalTasksLineProgress .inLine {
   width: 100%;
   height: 6px;
   background-color: #999999;
- 
 }
-.insideInLine{
+.insideInLine {
   height: 100%;
   width: 50%;
   background-color: #d69e2e;
- 
 }
 .CircularProgressbar .CircularProgressbar-text {
   dominant-baseline: middle;
@@ -78,13 +87,12 @@
 }
 .totalProjectSquer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) !important;
   gap: 12px;
-  height: 300px;
 }
 .totalProjectSquerGrid {
   width: 250px;
-  height: 124px;
+  height: 100px;
   background: linear-gradient(135deg, #3c97af 0%, #7ac0d2 100%);
   border-radius: 16px;
   padding: 10px 22px;
@@ -95,6 +103,14 @@
   justify-content: center;
   color: #ffffff;
   position: relative;
+}
+.totalProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); 
+  gap: 20px;
 }
 .Curlsline {
   position: absolute;
@@ -115,7 +131,7 @@
 .coloum {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 22px;
 }
 .totalTasks {
   background: #ffffff;
@@ -126,16 +142,17 @@
   gap: 32px;
   border-radius: 20.9px;
   display: flex;
+  margin-top: 12px;
 }
-.totalTasksInfoProgress{
+.totalTasksInfoProgress {
   display: flex;
   flex-direction: column;
   gap: 13.06px 11.5px;
 }
-.totalTasksProgress{
+.totalTasksProgress {
   padding: 38.5px 16px;
 }
-.totalTasksLineProgress{
+.totalTasksLineProgress {
   display: flex;
   flex-direction: column;
   padding: 38.5px 16px;

@@ -1,0 +1,18 @@
+.above-all-1{
+    padding-top: 16px;
+    background-color: #F7FDFD ;
+  }
+  
+  .main-user-container-es-1 {
+      max-width: 1400px;
+      margin: auto;
+    }
+    
+  .main-user-content-es-1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: start;
+      gap: 40px;
+    }
+  

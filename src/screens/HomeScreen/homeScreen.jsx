@@ -9,7 +9,7 @@ import Pluse2Icon from "../../CustomIcons/Pluse2Icon";
 import PlusIcon from "../../CustomIcons/PlusIcon";
 import StarIcon from "../../CustomIcons/StarIcon";
 import styles from "./homeScreen.module.css";
-
+import { Link } from "react-router-dom";
 const projects = [
   {
     id: 1,
@@ -50,7 +50,6 @@ const posts = [
     },
   },
 ];
-
 const HomeScreen = () => {
   return (
     <div style={styles.homeScreen}>
@@ -64,7 +63,10 @@ const HomeScreen = () => {
                 <div className={styles.rate}>
                   <StarIcon /> <span>5.0</span>
                 </div>
-                <button>Edit Profile</button>
+                <Link to="/edit">
+                  {" "}
+                  <button >Edit Profile</button>
+                </Link>
               </div>
             </Card>
             <Card marginTop={16}>
@@ -186,37 +188,46 @@ const HomeScreen = () => {
                 </div>
 
                 <div className={styles.recentItem}>
-                   <div className={styles.recentItemInfo}>
+                  <div className={styles.recentItemInfo}>
                     <div className={styles.recentItemAvatar}></div>
                     <div>
-                      <b>Web Design Project</b><br/>
+                      <b>Web Design Project</b>
+                      <br />
                       <small>10$/Hour</small>
                     </div>
-                   </div>
+                  </div>
 
-                   <button className={styles.arrowBtn}><ArrowTop/></button>
+                  <button className={styles.arrowBtn}>
+                    <ArrowTop />
+                  </button>
                 </div>
                 <div className={styles.recentItem}>
-                   <div className={styles.recentItemInfo}>
+                  <div className={styles.recentItemInfo}>
                     <div className={styles.recentItemAvatar}></div>
                     <div>
-                      <b>Web Design Project</b><br/>
+                      <b>Web Design Project</b>
+                      <br />
                       <small>10$/Hour</small>
                     </div>
-                   </div>
+                  </div>
 
-                   <button className={styles.arrowBtn}><ArrowTop/></button>
+                  <button className={styles.arrowBtn}>
+                    <ArrowTop />
+                  </button>
                 </div>
                 <div className={styles.recentItem}>
-                   <div className={styles.recentItemInfo}>
+                  <div className={styles.recentItemInfo}>
                     <div className={styles.recentItemAvatar}></div>
                     <div>
-                      <b>Web Design Project</b><br/>
+                      <b>Web Design Project</b>
+                      <br />
                       <small>10$/Hour</small>
                     </div>
-                   </div>
+                  </div>
 
-                   <button className={styles.arrowBtn}><ArrowTop/></button>
+                  <button className={styles.arrowBtn}>
+                    <ArrowTop />
+                  </button>
                 </div>
               </div>
             </Card>

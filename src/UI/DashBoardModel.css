@@ -1,0 +1,130 @@
+.flex-side-modal {
+  display: flex;
+}
+.main-DashBoardModel {
+  position: fixed;
+  background-color: #f8fbfc;
+  width: 526px;
+  height: 1000px;
+  border-radius: 16px;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  padding: 48px 24px;
+}
+.over-Lay {
+  z-index: 1;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.279);
+}
+.inside-DashBoardModel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.name-inside-DashBoardModel {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.close-inside-DashBoardModel {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bfbfbf;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.greenDotDashBoardModel {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3c97af;
+}
+.greenDotDashBoardModelSpan {
+  color: #3182ce;
+}
+.stateOfDashBoardModel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.greenDotDashBoardModelSpanForTime {
+  color: #999999;
+}
+.allStatesOfDashBoardModel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.centerLineDashBoardModel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lineDashBoardModel {
+  width: 450px;
+  height: 1px;
+  background-color: #bfbfbf;
+}
+.ProjectDescriptionModal {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.paraghraphProjectDescriptionModal {
+  color: #999999;
+}
+.spanProjectDescriptionModal {
+  color: #3c97af;
+  cursor: pointer;
+}
+.FreelancerApplied {
+  display: flex;
+  justify-content: space-between;
+  height: 31px;
+}
+.imgAndName {
+  display: flex;
+  gap: 8px;
+}
+.imgForFreelancerApplied{
+    width:30px ;
+    height: 30px;
+}
+.btnsForSideModal{
+    display: flex;
+    gap: 12px;
+}
+.btnAccept{
+    background-color: #DDF8E7;
+    border: none;
+    border-radius: 1000px;
+    padding: 8px 15px;
+    color: #1FAD58;
+    cursor: pointer;
+}
+.headFreelancerApplied{
+    color: #0A0A0A;
+    font-size: 14px;
+    font-weight: 600;
+}
+.paraFreelancerApplied{
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+}
+.btnDecline{
+    background-color: #FFD6D6;
+    border: none;
+    border-radius: 1000px;
+    padding: 8px 15px;
+    color: #EB0000;
+    cursor: pointer;
+}
